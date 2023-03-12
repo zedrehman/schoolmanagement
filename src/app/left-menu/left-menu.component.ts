@@ -12,23 +12,4 @@ export class LeftMenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  RedirectToDashboard(): void {
-    this.router.navigate(['dashboard']);
-  }
-  RedirectToStudent(): void {
-    this.router.navigate(['student']);
-  }
-  RedirectToTeacher(): void {
-    this.router.navigate(['teacher']);
-  }
-
-  RedirectToAcademic(): void {
-    this.router.navigate(['academic']);
-  }
-
-  RedirectToClass(): void {
-    this.router.navigate(['class']);
-  }
-
 }

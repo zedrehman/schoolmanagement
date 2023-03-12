@@ -12,8 +12,7 @@
                             <img class="img-circle img-md" src="img/profile-photos/1.png" alt="Profile Picture" />
                         </div>
                         <a href="#profile-nav" class="box-block" data-toggle="collapse" aria-expanded="false">
-                            <span class="pull-right dropdown-toggle"><i class="dropdown-caret"></i
-              ></span>
+                            <span class="pull-right dropdown-toggle"><i class="dropdown-caret"></i></span>
                             <p class="mnp-name">Aaron Chavez</p>
                             <span class="mnp-desc">aaron.cha@themeon.net</span>
                         </a>
@@ -34,58 +33,57 @@
                     </div>
                 </div>
                 <ul id="mainnav-menu" class="list-group">
-                    <!--Category name-->
-                    <li class="list-header">Admin Setup</li>
+                    <li class="list-header">Navigation</li>
                     <li>
-                        <a aria-expanded="false" href="" (click)="RedirectToDashboard()">
+                        <a aria-expanded="false" routerLink="/">
                             <i class="fa fa-dashboard"></i>
                             <span class="menu-title">Dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a aria-expanded="false" [routerLink]="['/routePath']" routerLinkActive="router-link-active">
-                            <i class="fa fa-address-card"></i>
-                            <span class="menu-title">Academic Calander</span>
+                        <a aria-expanded="false">
+                            <i class="fa fa-bus"></i>
+                            <span class="menu-title">Admin Setup</span>
+                            <i class="arrow"></i>
                         </a>
+                        <ul class="collapse" aria-expanded="false" style="height: 0px;">
+                            <li><a routerLink="/academic">Academic Calander</a></li>
+                            <li><a routerLink="/department">Department</a></li>
+                            <li><a routerLink="/designation">Designation</a></li>
+                            <li><a routerLink="/class">Class</a></li>
+                            <li><a routerLink="/section">Section</a></li>
+                            <li><a routerLink="/stream">Stream</a></li>
+                            <li><a routerLink="/rolesetup">Role Managment</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a aria-expanded="false" (click)="RedirectToStudent()">
-                            <i class="fa fa-address-card"></i>
-                            <span class="menu-title">Class</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a aria-expanded="false" (click)="RedirectToStudent()">
-                            <i class="fa fa-address-card"></i>
-                            <span class="menu-title">Section</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a aria-expanded="false" (click)="RedirectToStudent()">
-                            <i class="fa fa-address-card"></i>
-                            <span class="menu-title">Stream</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a aria-expanded="false" (click)="RedirectToStudent()">
+                        <a aria-expanded="false" routerLink="/student">
                             <i class="fa fa-address-card"></i>
                             <span class="menu-title">Student</span>
                         </a>
                     </li>
                     <li>
-                        <a aria-expanded="false" (click)="RedirectToTeacher()">
+                        <a aria-expanded="false" routerLink="/teacher">
                             <i class="fa fa-address-card"></i>
                             <span class="menu-title">Teacher</span>
                         </a>
                     </li>
                     <li>
-                        <a aria-expanded="false" (click)="RedirectToTeacher()">
-                            <i class="fa fa-address-card"></i>
-                            <span class="menu-title">Role Managment</span>
+                        <a aria-expanded="false">
+                            <i class="fa fa-bus"></i>
+                            <span class="menu-title">Vehicle Set</span>
+                            <i class="arrow"></i>
                         </a>
+                        <ul class="collapse" aria-expanded="false" style="height: 0px;">
+                            <li><a routerLink="/vehicle">Vehicle</a></li>
+                            <li><a routerLink="/driver">Driver</a></li>
+                            <li><a routerLink="/pickuppoints">Pickup Point</a></li>
+                            <li><a routerLink="/vehicleroutes">Vehicle Routes</a></li>
+                        </ul>
                     </li>
                     <!--Category name-->
                     <li class="list-header">Components</li>
+                    
                 </ul>
                 <!--================================-->
                 <!--End widget-->

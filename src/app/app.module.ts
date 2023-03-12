@@ -16,7 +16,11 @@ import { DesignationComponent } from './admin/designation/designation.component'
 import { RolerightsComponent } from './admin/rolerights/rolerights.component';
 import { SectionComponent } from './admin/section/section.component';
 import { StreamComponent } from './admin/stream/stream.component';
-import { StudentDetailsComponent } from './student/student-details/student-details.component';
+import { VehicleComponent } from './transport/vehicle/vehicle.component';
+import { DriverComponent } from './transport/driver/driver.component';
+import { PickupPointComponent } from './transport/pickup-point/pickup-point.component';
+import { VehicleRoutesComponent } from './transport/vehicle-routes/vehicle-routes.component';
+
 
 
 @NgModule({
@@ -35,7 +39,10 @@ import { StudentDetailsComponent } from './student/student-details/student-detai
     RolerightsComponent,
     SectionComponent,
     StreamComponent,
-    StudentDetailsComponent
+    VehicleComponent,
+    DriverComponent,
+    PickupPointComponent,
+    VehicleRoutesComponent
   ],
   imports: [
     BrowserModule,
