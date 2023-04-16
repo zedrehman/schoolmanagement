@@ -20,6 +20,19 @@ import { VehicleComponent } from './transport/vehicle/vehicle.component';
 import { DriverComponent } from './transport/driver/driver.component';
 import { PickupPointComponent } from './transport/pickup-point/pickup-point.component';
 import { VehicleRoutesComponent } from './transport/vehicle-routes/vehicle-routes.component';
+import { HeadCostComponent } from './Fees/head-cost/head-cost.component';
+import { ConcessionComponent } from './Fees/concession/concession.component';
+import { FeeSetupComponent } from './Fees/fee-setup/fee-setup.component';
+import { FeeCollectComponent } from './Fees/fee-collect/fee-collect.component';
+import { BonafideCertificateComponent } from './Certificate/bonafide-certificate/bonafide-certificate.component';
+import { CourseCompletionCertificateComponent } from './Certificate/course-completion-certificate/course-completion-certificate.component';
+import { TransferCertificateComponent } from './Certificate/transfer-certificate/transfer-certificate.component';
+import { ParticipationCertificateComponent } from './Certificate/participation-certificate/participation-certificate.component';
+import { MigrationCertificateComponent } from './Certificate/migration-certificate/migration-certificate.component';
+import { CharacterCertificateComponent } from './Certificate/character-certificate/character-certificate.component';
+import { BooksComponent } from './Library/books/books.component';
+import { IssueBooksComponent } from './Library/issue-books/issue-books.component';
+import { FinesComponent } from './Library/fines/fines.component';
 
 
 
@@ -42,7 +55,20 @@ import { VehicleRoutesComponent } from './transport/vehicle-routes/vehicle-route
     VehicleComponent,
     DriverComponent,
     PickupPointComponent,
-    VehicleRoutesComponent
+    VehicleRoutesComponent,
+    HeadCostComponent,
+    ConcessionComponent,
+    FeeSetupComponent,
+    FeeCollectComponent,
+    BonafideCertificateComponent,
+    CourseCompletionCertificateComponent,
+    TransferCertificateComponent,
+    ParticipationCertificateComponent,
+    MigrationCertificateComponent,
+    CharacterCertificateComponent,
+    BooksComponent,
+    IssueBooksComponent,
+    FinesComponent
   ],
   imports: [
     BrowserModule,
