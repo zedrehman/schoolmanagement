@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcademicYearComponent implements OnInit {
 
+  AcademicYearId: number = 0;
+  IsAddEdit: number = 0;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  AddNew() {
+    this.IsAddEdit = 1;
   }
 
 }

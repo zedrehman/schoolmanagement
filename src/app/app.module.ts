@@ -33,7 +33,9 @@ import { CharacterCertificateComponent } from './Certificate/character-certifica
 import { BooksComponent } from './Library/books/books.component';
 import { IssueBooksComponent } from './Library/issue-books/issue-books.component';
 import { FinesComponent } from './Library/fines/fines.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 
 @NgModule({
@@ -72,7 +74,9 @@ import { FinesComponent } from './Library/fines/fines.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    BsDatepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
